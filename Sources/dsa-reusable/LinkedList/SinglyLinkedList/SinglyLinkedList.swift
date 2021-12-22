@@ -7,10 +7,24 @@
 
 import Foundation
 
-public class SinglyLinkedList<T> {
+public class SinglyLinkedList<T: Equatable> {
     public var head: SinglyLinkedListNode<T>?
 
     public var isEmpty: Bool { head == nil }
+
+    public var asArray: [T] {
+        var outputArray: [T] = []
+
+        var currentNode = head
+
+        while currentNode != nil {
+            outputArray.append(currentNode!.data)
+
+            currentNode = currentNode?.nextNode
+        }
+
+        return outputArray
+    }
 
     public func insertAtStart(data: T) {
         let newNode = SinglyLinkedListNode(data: data)
@@ -24,14 +38,35 @@ public class SinglyLinkedList<T> {
     }
 
     public func deleteFromStart() -> T? {
-        if isEmpty {
-            return nil
-        } else {
-            let deletedNode = head
+        guard isEmpty == false else { return nil }
 
-            head = head?.nextNode
+        let deletedNode = head
 
-            return deletedNode?.data
+        head = head?.nextNode
+
+        return deletedNode?.data
+    }
+
+    public func delete(data: T) {
+        guard isEmpty == false else { return }
+
+        if head?.data == data {
+            head = nil
+            return
+        }
+
+        var previousNode: SinglyLinkedListNode<T>? = nil
+        var currentNode = head
+
+        while currentNode != nil {
+            if currentNode!.data == data {
+                previousNode?.nextNode = currentNode?.nextNode
+                currentNode = nil
+                return
+            }
+
+            previousNode = currentNode
+            currentNode = currentNode?.nextNode
         }
     }
 
@@ -43,12 +78,12 @@ public class SinglyLinkedList<T> {
 
         print("Printing linkedList:")
 
-        var linkedListNode = head
+        var currentNode = head
 
-        while linkedListNode != nil {
-            print(linkedListNode!.data)
+        while currentNode != nil {
+            print(currentNode!.data)
 
-            linkedListNode = linkedListNode?.nextNode
+            currentNode = currentNode?.nextNode
         }
     }
 }

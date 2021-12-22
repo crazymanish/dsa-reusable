@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SinglyLinkedListNode<T> {
+public class SinglyLinkedListNode<T: Equatable> {
     public var data: T
     public var nextNode: SinglyLinkedListNode?
 
