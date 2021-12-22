@@ -22,9 +22,9 @@
 
 /* Begin PBXBuildFile section */
 		131D1716277311D9007FFE32 /* Array+Joined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D1715277311D9007FFE32 /* Array+Joined.swift */; };
-		OBJ_23 /* dsa_reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* dsa_reusable.swift */; };
+		131D171B277312CE007FFE32 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D171A277312CE007FFE32 /* SinglyLinkedList.swift */; };
+		131D171D277312DD007FFE32 /* SinglyLinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131D171C277312DD007FFE32 /* SinglyLinkedListNode.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_41 /* dsa_reusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* dsa_reusableTests.swift */; };
 		OBJ_43 /* dsa_reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "dsa-reusable::dsa-reusable::Product" /* dsa_reusable.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +47,11 @@
 
 /* Begin PBXFileReference section */
 		131D1715277311D9007FFE32 /* Array+Joined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Joined.swift"; sourceTree = "<group>"; };
-		OBJ_12 /* dsa_reusableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dsa_reusableTests.swift; sourceTree = "<group>"; };
+		131D171A277312CE007FFE32 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
+		131D171C277312DD007FFE32 /* SinglyLinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedListNode.swift; sourceTree = "<group>"; };
 		OBJ_16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* dsa_reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dsa_reusable.swift; sourceTree = "<group>"; };
 		"dsa-reusable::dsa-reusable::Product" /* dsa_reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dsa_reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"dsa-reusable::dsa-reusableTests::Product" /* dsa_reusableTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = dsa_reusableTests.xctest; path = "dsa-reusableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +83,23 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		131D17182773125F007FFE32 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				131D171927731279007FFE32 /* SinglyLinkedList */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		131D171927731279007FFE32 /* SinglyLinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				131D171A277312CE007FFE32 /* SinglyLinkedList.swift */,
+				131D171C277312DD007FFE32 /* SinglyLinkedListNode.swift */,
+			);
+			path = SinglyLinkedList;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +111,6 @@
 		OBJ_11 /* dsa-reusableTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* dsa_reusableTests.swift */,
 			);
 			name = "dsa-reusableTests";
 			path = "Tests/dsa-reusableTests";
@@ -133,7 +149,7 @@
 		OBJ_8 /* dsa-reusable */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* dsa_reusable.swift */,
+				131D17182773125F007FFE32 /* LinkedList */,
 				131D1717277311E3007FFE32 /* Array */,
 			);
 			name = "dsa-reusable";
@@ -224,8 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				131D171B277312CE007FFE32 /* SinglyLinkedList.swift in Sources */,
+				131D171D277312DD007FFE32 /* SinglyLinkedListNode.swift in Sources */,
 				131D1716277311D9007FFE32 /* Array+Joined.swift in Sources */,
-				OBJ_23 /* dsa_reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_41 /* dsa_reusableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
