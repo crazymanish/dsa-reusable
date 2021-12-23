@@ -67,4 +67,19 @@ final class SinglyLinkedListTests: XCTestCase {
         XCTAssertEqual(deletedData, 3)
         XCTAssertEqual(linkedList.asArray, [4, 2, 1])
     }
+
+    func testDeleteList() {
+        let linkedList = SinglyLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertEqual(linkedList.asArray, [4, 3, 2, 1])
+
+        linkedList.deleteList()
+
+        XCTAssertEqual(linkedList.asArray, [])
+    }
 }

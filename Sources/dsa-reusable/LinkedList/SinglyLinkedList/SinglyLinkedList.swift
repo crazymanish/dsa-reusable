@@ -100,6 +100,10 @@ public class SinglyLinkedList<T: Equatable> {
         return nil
     }
 
+    public func deleteList() {
+        head = nil
+    }
+
     public func printList() {
         if isEmpty {
             print("LinkedList is empty!")
