@@ -70,6 +70,36 @@ public class SinglyLinkedList<T: Equatable> {
         }
     }
 
+    public func delete(at index: Int) -> T? {
+        guard isEmpty == false else { return nil }
+
+        if index == 0 {
+            let deletedNodeData = head?.data
+            head = nil
+            return deletedNodeData
+        }
+
+        var previousNode: SinglyLinkedListNode<T>? = nil
+        var currentNode = head
+        var currentIndex = 0
+
+        while currentNode != nil {
+            if currentIndex == index {
+                previousNode?.nextNode = currentNode?.nextNode
+
+                let deletedNodeData = currentNode?.data
+                currentNode = nil
+                return deletedNodeData
+            }
+
+            previousNode = currentNode
+            currentNode = currentNode?.nextNode
+            currentIndex += 1
+        }
+
+        return nil
+    }
+
     public func printList() {
         if isEmpty {
             print("LinkedList is empty!")

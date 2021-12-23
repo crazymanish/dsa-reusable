@@ -5,4 +5,5 @@ SPM for DataStructure&amp;Algorithms reusability
   - Insert data at start
   - Delete data from start
   - Delete using data key
+  - Delete using index
   - Helpers: isEmpty, asArray, printList
