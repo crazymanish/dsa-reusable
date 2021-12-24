@@ -26,6 +26,20 @@ public class SinglyLinkedList<T: Equatable> {
         return outputArray
     }
 
+    public var count: Int {
+        var length = 0
+
+        var currentNode = head
+
+        while currentNode != nil {
+            length += 1
+
+            currentNode = currentNode?.nextNode
+        }
+
+        return length
+    }
+
     public func insertAtStart(data: T) {
         let newNode = SinglyLinkedListNode(data: data)
 
@@ -102,6 +116,20 @@ public class SinglyLinkedList<T: Equatable> {
 
     public func deleteList() {
         head = nil
+    }
+
+    public func search(data: T) -> Bool {
+        guard isEmpty == false else { return false }
+
+        var currentNode = head
+
+        while currentNode != nil {
+            if currentNode!.data == data { return true }
+
+            currentNode = currentNode?.nextNode
+        }
+
+        return false
     }
 
     public func printList() {

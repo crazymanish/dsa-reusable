@@ -21,6 +21,17 @@ final class SinglyLinkedListTests: XCTestCase {
         XCTAssertFalse(linkedList.isEmpty)
     }
 
+    func testCount() {
+        let linkedList = SinglyLinkedList<Int>()
+
+        XCTAssertEqual(linkedList.count, 0)
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+
+        XCTAssertEqual(linkedList.count, 2)
+    }
+
     func testDeleteFromStart() {
         let linkedList = SinglyLinkedList<Int>()
 
@@ -81,5 +92,17 @@ final class SinglyLinkedListTests: XCTestCase {
         linkedList.deleteList()
 
         XCTAssertEqual(linkedList.asArray, [])
+    }
+
+    func testSearch() {
+        let linkedList = SinglyLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertTrue(linkedList.search(data: 3))
+        XCTAssertFalse(linkedList.search(data: 5))
     }
 }

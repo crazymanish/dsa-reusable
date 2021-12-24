@@ -2,8 +2,14 @@
 SPM for DataStructure&amp;Algorithms reusability 
 
 - [X] [Singly LinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift)
-  - Insert node at start
-  - Delete node from start
+  - Insert node at start(head)
+  - Delete node from start(head)
   - Delete node using data key
   - Delete node using index
-  - Helpers: isEmpty, asArray, printList, deleteList
+  - Search node using data key
+  - Helpers: 
+    - isEmpty,
+    - count (length of List) 
+    - asArray, 
+    - printList, 
+    - deleteList
