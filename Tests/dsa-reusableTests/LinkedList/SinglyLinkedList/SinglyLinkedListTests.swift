@@ -105,4 +105,17 @@ final class SinglyLinkedListTests: XCTestCase {
         XCTAssertTrue(linkedList.search(data: 3))
         XCTAssertFalse(linkedList.search(data: 5))
     }
+
+    func testFind() {
+        let linkedList = SinglyLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertEqual(linkedList.asArray, [4, 3, 2, 1])
+        XCTAssertEqual(linkedList.find(at: 0), 4)
+        XCTAssertNil(linkedList.find(at: 5))
+    }
 }

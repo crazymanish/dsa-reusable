@@ -132,6 +132,21 @@ public class SinglyLinkedList<T: Equatable> {
         return false
     }
 
+    public func find(at index: Int) -> T? {
+        guard isEmpty == false else { return nil }
+
+        var currentNode = head
+        var currentIndex = 0
+        while currentNode != nil {
+            if currentIndex == index { return currentNode?.data }
+
+            currentNode = currentNode?.nextNode
+            currentIndex += 1
+        }
+
+        return nil
+    }
+
     public func printList() {
         if isEmpty {
             print("LinkedList is empty!")
