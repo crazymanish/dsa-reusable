@@ -132,7 +132,7 @@ public class SinglyLinkedList<T: Equatable> {
         return false
     }
 
-    public func find(at index: Int) -> T? {
+    public func search(at index: Int) -> T? {
         guard isEmpty == false else { return nil }
 
         var currentNode = head
