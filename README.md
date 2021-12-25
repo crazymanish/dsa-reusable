@@ -12,6 +12,7 @@ SPM for DataStructure&amp;Algorithms reusability
   - [Delete node at index](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L87)
   - [Search node using data key](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L121)
   - [Search node at index](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L135)
+  - [Search node from End at index](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L151)
   - Helpers: 
     - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L121),
     - [count (length of List)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L29), 

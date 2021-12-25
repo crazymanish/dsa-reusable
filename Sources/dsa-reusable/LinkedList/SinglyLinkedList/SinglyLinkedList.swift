@@ -147,6 +147,24 @@ public class SinglyLinkedList<T: Equatable> {
         return nil
     }
 
+    // Double pointer concept : Start second pointer after first pointer reached at the given index
+    public func searchFromEnd(at index: Int) -> T? {
+        guard isEmpty == false else { return nil }
+
+        var currentNode = head
+        var resultNode: SinglyLinkedListNode<T>? = nil
+        var currentIndex = 0
+        while currentNode != nil {
+            if currentIndex == index + 1 { resultNode = head }
+
+            currentNode = currentNode?.nextNode
+            resultNode = resultNode?.nextNode
+            currentIndex += 1
+        }
+
+        return resultNode?.data
+    }
+
     public func printList() {
         if isEmpty {
             print("LinkedList is empty!")
