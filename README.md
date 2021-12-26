@@ -1,9 +1,27 @@
 # dsa-reusable
-SPM for DataStructure&amp;Algorithms reusability 
+Swift package for DataStructure&Algorithms reusability 
 
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
+
+### Integration
+- Add the package to your project: go to the File menu and choose Swift Packages > Add Package Dependency. For the URL enter https://github.com/crazymanish/dsa-reusable 
+- Xcode will fetch the package, read its configuration, and show you a new screen asking you which version you want to use. Click Finish to make Xcode add it to the project. You should see it appear in the project navigator, under `Swift Package Dependencies`.
+- To try it out,
+```swift
+import dsa_reusable
+
+let singlyLinkedList = SinglyLinkedList<Int>()
+singlyLinkedList.insertAtStart(data: 1)
+singlyLinkedList.insertAtStart(data: 2)
+singlyLinkedList.insertAtStart(data: 3)
+
+print("Input: \(singlyLinkedList.count)")
+print("Input: \(singlyLinkedList.asArray)")
+...
+...
+```
 
 - [X] [**Singly LinkedList**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift) :: [**_Unit Tests_**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/LinkedList/SinglyLinkedList/SinglyLinkedListTests.swift)
   - [Insert node at start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L43)
