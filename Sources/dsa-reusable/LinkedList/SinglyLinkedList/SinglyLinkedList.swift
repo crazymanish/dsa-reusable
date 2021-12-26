@@ -181,4 +181,6 @@ public class SinglyLinkedList<T: Equatable> {
             currentNode = currentNode?.nextNode
         }
     }
+
+    public init() {}
 }
