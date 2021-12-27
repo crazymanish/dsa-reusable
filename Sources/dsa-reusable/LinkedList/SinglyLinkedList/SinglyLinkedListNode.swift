@@ -16,3 +16,11 @@ public class SinglyLinkedListNode<T: Equatable> {
         self.nextNode = nextNode
     }
 }
+
+extension SinglyLinkedListNode: Equatable {
+    static public func == (lhs: SinglyLinkedListNode, rhs: SinglyLinkedListNode) -> Bool {
+        if lhs.data != rhs.data { return false }
+        if lhs.nextNode != rhs.nextNode { return false }
+        return true
+    }
+}
