@@ -19,8 +19,8 @@ public class SinglyLinkedListNode<T: Equatable> {
 
 extension SinglyLinkedListNode: Equatable {
     static public func == (lhs: SinglyLinkedListNode, rhs: SinglyLinkedListNode) -> Bool {
-        if lhs.data != rhs.data { return false }
-        if lhs.nextNode != rhs.nextNode { return false }
-        return true
+        if lhs.data == rhs.data && lhs.nextNode === rhs.nextNode { return true }
+
+        return false
     }
 }
