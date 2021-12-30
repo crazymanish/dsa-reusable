@@ -73,4 +73,8 @@ public class SinglyCircularLinkedList<T: Equatable> {
     }
 
     public init() {}
+
+    public func deleteList() {
+        last = nil
+    }
 }
