@@ -17,13 +17,13 @@ public class SinglyCircularLinkedList<T: Equatable> {
 
         var outputArray: [T] = []
 
-        var currentNode = last
+        var currentNode = last?.nextNode
 
         repeat {
             outputArray.append(currentNode!.data)
             currentNode = currentNode?.nextNode
 
-        } while currentNode?.nextNode != last?.nextNode
+        } while currentNode != last?.nextNode
 
         return outputArray
     }
@@ -38,7 +38,7 @@ public class SinglyCircularLinkedList<T: Equatable> {
         repeat {
             length += 1
             currentNode = currentNode?.nextNode
-        } while currentNode?.nextNode != last?.nextNode
+        } while currentNode != last
 
         return length
     }
@@ -52,7 +52,7 @@ public class SinglyCircularLinkedList<T: Equatable> {
         } else {
             newNode.nextNode = last?.nextNode
             last?.nextNode = newNode
-            last = newNode
+            last = last?.nextNode
         }
     }
 
@@ -64,12 +64,12 @@ public class SinglyCircularLinkedList<T: Equatable> {
 
         print("Printing Circular linkedList:")
 
-        var currentNode = last
+        var currentNode = last?.nextNode
 
         repeat {
             print(currentNode!.data)
             currentNode = currentNode?.nextNode
-        } while currentNode?.nextNode != last?.nextNode
+        } while currentNode != last?.nextNode
     }
 
     public init() {}

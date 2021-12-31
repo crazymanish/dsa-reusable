@@ -16,8 +16,10 @@ final class SinglyCircularLinkedListTests: XCTestCase {
 
         linkedList.insertAtStart(data: 1)
         linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
 
-        XCTAssertEqual(linkedList.asArray, [2, 1])
+        XCTAssertEqual(linkedList.asArray, [1, 2, 3, 4])
         XCTAssertFalse(linkedList.isEmpty)
     }
 
