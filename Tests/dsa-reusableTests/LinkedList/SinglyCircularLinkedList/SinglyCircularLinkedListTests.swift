@@ -33,4 +33,51 @@ final class SinglyCircularLinkedListTests: XCTestCase {
 
         XCTAssertEqual(linkedList.count, 2)
     }
+
+    func testDeleteFromStart() {
+        let linkedList = SinglyCircularLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertEqual(linkedList.asArray, [1, 2, 3, 4])
+
+        let deletedData = linkedList.deleteFromStart()
+
+        XCTAssertEqual(deletedData, 1)
+        XCTAssertEqual(linkedList.asArray, [2, 3, 4])
+    }
+
+    func testDeleteWithData() {
+        let linkedList = SinglyCircularLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertEqual(linkedList.asArray, [1, 2, 3, 4])
+
+        linkedList.delete(data: 2)
+
+        XCTAssertEqual(linkedList.asArray, [1, 3, 4])
+    }
+
+    func testDeleteWithIndex() {
+        let linkedList = SinglyCircularLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 10)
+        linkedList.insertAtStart(data: 20)
+        linkedList.insertAtStart(data: 30)
+        linkedList.insertAtStart(data: 40)
+
+        XCTAssertEqual(linkedList.asArray, [10, 20, 30, 40])
+
+        let deletedData = linkedList.delete(at: 1)
+
+        XCTAssertEqual(deletedData, 20)
+        XCTAssertEqual(linkedList.asArray, [10, 30, 40])
+    }
 }
