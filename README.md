@@ -43,6 +43,8 @@ print("Input: \(singlyLinkedList.asArray)")
   - [Delete node from start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L81)
   - [Delete node using data key](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L91)
   - [Delete node at index](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L114)
+  - [Search node using data key](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L138)
+  - [Search node at index](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L152)
   - Helpers:
     - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L13),
     - [count (length of List)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L31),

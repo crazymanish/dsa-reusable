@@ -134,4 +134,34 @@ public class SinglyCircularLinkedList<T: Equatable> {
 
         return nil
     }
+
+    public func search(data: T) -> Bool {
+        guard isEmpty == false else { return false }
+
+        var currentNode = last
+
+        repeat {
+            if currentNode!.data == data { return true }
+
+            currentNode = currentNode?.nextNode
+        } while currentNode != last
+
+        return false
+    }
+
+    public func search(at index: Int) -> T? {
+        guard isEmpty == false else { return nil }
+
+        var currentNode = last?.nextNode
+        var currentIndex = 0
+
+        repeat {
+            if currentIndex == index { return currentNode?.data }
+
+            currentNode = currentNode?.nextNode
+            currentIndex += 1
+        } while currentNode != last?.nextNode
+
+        return nil
+    }
 }

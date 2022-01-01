@@ -80,4 +80,29 @@ final class SinglyCircularLinkedListTests: XCTestCase {
         XCTAssertEqual(deletedData, 20)
         XCTAssertEqual(linkedList.asArray, [10, 30, 40])
     }
+
+    func testSearch() {
+        let linkedList = SinglyCircularLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertTrue(linkedList.search(data: 3))
+        XCTAssertFalse(linkedList.search(data: 5))
+    }
+
+    func testSearchAtIndex() {
+        let linkedList = SinglyCircularLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 1)
+        linkedList.insertAtStart(data: 2)
+        linkedList.insertAtStart(data: 3)
+        linkedList.insertAtStart(data: 4)
+
+        XCTAssertEqual(linkedList.asArray, [1, 2, 3, 4])
+        XCTAssertEqual(linkedList.search(at: 0), 1)
+        XCTAssertNil(linkedList.search(at: 5))
+    }
 }
