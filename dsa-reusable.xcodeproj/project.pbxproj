@@ -29,6 +29,8 @@
 		132A6C56277E517900C1A291 /* SinglyCircularLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A6C55277E517900C1A291 /* SinglyCircularLinkedListTests.swift */; };
 		13F708B52782383900CB3140 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708B42782383900CB3140 /* Stack.swift */; };
 		13F708B927823A6200CB3140 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708B827823A6200CB3140 /* StackTests.swift */; };
+		13F708BB27823DCF00CB3140 /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708BA27823DCF00CB3140 /* StackLinkedList.swift */; };
+		13F708BE27823EF100CB3140 /* StackLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708BC27823EE000CB3140 /* StackLinkedListTests.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_43 /* dsa_reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "dsa-reusable::dsa-reusable::Product" /* dsa_reusable.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		132A6C55277E517900C1A291 /* SinglyCircularLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyCircularLinkedListTests.swift; sourceTree = "<group>"; };
 		13F708B42782383900CB3140 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		13F708B827823A6200CB3140 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		13F708BA27823DCF00CB3140 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
+		13F708BC27823EE000CB3140 /* StackLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedListTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -147,33 +151,19 @@
 		13F708B22782380A00CB3140 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				13F708B32782382300CB3140 /* Array */,
+				13F708B42782383900CB3140 /* Stack.swift */,
+				13F708BA27823DCF00CB3140 /* StackLinkedList.swift */,
 			);
 			path = Stack;
-			sourceTree = "<group>";
-		};
-		13F708B32782382300CB3140 /* Array */ = {
-			isa = PBXGroup;
-			children = (
-				13F708B42782383900CB3140 /* Stack.swift */,
-			);
-			path = Array;
 			sourceTree = "<group>";
 		};
 		13F708B627823A4100CB3140 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				13F708B727823A4B00CB3140 /* Array */,
+				13F708B827823A6200CB3140 /* StackTests.swift */,
+				13F708BC27823EE000CB3140 /* StackLinkedListTests.swift */,
 			);
 			path = Stack;
-			sourceTree = "<group>";
-		};
-		13F708B727823A4B00CB3140 /* Array */ = {
-			isa = PBXGroup;
-			children = (
-				13F708B827823A6200CB3140 /* StackTests.swift */,
-			);
-			path = Array;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -319,6 +309,7 @@
 			buildActionMask = 0;
 			files = (
 				131D171B277312CE007FFE32 /* SinglyLinkedList.swift in Sources */,
+				13F708BB27823DCF00CB3140 /* StackLinkedList.swift in Sources */,
 				13F708B52782383900CB3140 /* Stack.swift in Sources */,
 				131D171D277312DD007FFE32 /* SinglyLinkedListNode.swift in Sources */,
 				131D1716277311D9007FFE32 /* Array+Joined.swift in Sources */,
@@ -339,6 +330,7 @@
 			buildActionMask = 0;
 			files = (
 				131D172227731D56007FFE32 /* SinglyLinkedListTests.swift in Sources */,
+				13F708BE27823EF100CB3140 /* StackLinkedListTests.swift in Sources */,
 				132A6C56277E517900C1A291 /* SinglyCircularLinkedListTests.swift in Sources */,
 				13F708B927823A6200CB3140 /* StackTests.swift in Sources */,
 			);
