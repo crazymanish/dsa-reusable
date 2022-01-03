@@ -33,6 +33,8 @@
 		13F708BE27823EF100CB3140 /* StackLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708BC27823EE000CB3140 /* StackLinkedListTests.swift */; };
 		13F7090D27837DCD00CB3140 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7090C27837DCD00CB3140 /* Queue.swift */; };
 		13F70910278384B400CB3140 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7090F278384B400CB3140 /* QueueTests.swift */; };
+		13F7091227839E6700CB3140 /* QueueLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F7091127839E6700CB3140 /* QueueLinkedList.swift */; };
+		13F709142783A2A100CB3140 /* QueueLinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F709132783A2A100CB3140 /* QueueLinkedListTests.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_43 /* dsa_reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "dsa-reusable::dsa-reusable::Product" /* dsa_reusable.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		13F708BC27823EE000CB3140 /* StackLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedListTests.swift; sourceTree = "<group>"; };
 		13F7090C27837DCD00CB3140 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		13F7090F278384B400CB3140 /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		13F7091127839E6700CB3140 /* QueueLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkedList.swift; sourceTree = "<group>"; };
+		13F709132783A2A100CB3140 /* QueueLinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkedListTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				13F7090C27837DCD00CB3140 /* Queue.swift */,
+				13F7091127839E6700CB3140 /* QueueLinkedList.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				13F7090F278384B400CB3140 /* QueueTests.swift */,
+				13F709132783A2A100CB3140 /* QueueLinkedListTests.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				13F7091227839E6700CB3140 /* QueueLinkedList.swift in Sources */,
 				131D171B277312CE007FFE32 /* SinglyLinkedList.swift in Sources */,
 				13F7090D27837DCD00CB3140 /* Queue.swift in Sources */,
 				13F708BB27823DCF00CB3140 /* StackLinkedList.swift in Sources */,
@@ -354,6 +361,7 @@
 			files = (
 				131D172227731D56007FFE32 /* SinglyLinkedListTests.swift in Sources */,
 				13F708BE27823EF100CB3140 /* StackLinkedListTests.swift in Sources */,
+				13F709142783A2A100CB3140 /* QueueLinkedListTests.swift in Sources */,
 				13F70910278384B400CB3140 /* QueueTests.swift in Sources */,
 				132A6C56277E517900C1A291 /* SinglyCircularLinkedListTests.swift in Sources */,
 				13F708B927823A6200CB3140 /* StackTests.swift in Sources */,

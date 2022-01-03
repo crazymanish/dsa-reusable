@@ -20,13 +20,13 @@ class Queue<T> {
 }
 
 extension Queue {
-    public var rearItem: T? {
+    public var rearData: T? {
         if isEmpty { return nil }
 
         return array[rearIndex]
     }
 
-    public var frontItem: T? {
+    public var frontData: T? {
         if isEmpty { return nil }
 
         return array[frontIndex]
