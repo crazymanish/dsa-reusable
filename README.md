@@ -23,7 +23,7 @@ print("Input: \(singlyLinkedList.asArray)")
 ...
 ```
 
-- [X] [Singly LinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift) :: [**_Unit Tests_**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/LinkedList/SinglyLinkedList/SinglyLinkedListTests.swift)
+- [X] [Singly LinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/LinkedList/SinglyLinkedList/SinglyLinkedListTests.swift)
   - [Insert node at start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L43)
   - [Delete node from start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L54)
   - [Delete node using data key](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L64)
@@ -38,7 +38,7 @@ print("Input: \(singlyLinkedList.asArray)")
     - [printList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L135)
     - [deleteList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L117)
 
-- [X] [Singly Circular LinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift) :: [**_Unit Tests_**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedListTests.swift)
+- [X] [Singly Circular LinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedListTests.swift)
   - [Insert node at start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L46)
   - [Delete node from start(head)](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L81)
   - [Delete node using data key](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L91)
@@ -52,16 +52,32 @@ print("Input: \(singlyLinkedList.asArray)")
     - [printList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L59)
     - [deleteList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L59)
 
-- [X] [Stack](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift) :: [**_Unit Tests_**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Stack/StackTests.swift)
+- [X] [Stack](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Stack/StackTests.swift)
   - [Push](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift#L26)
   - [Pop](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift#L31)
   - Helpers:
     - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift#L18)
     - [peek](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift#L20)
 
-- [X] [StackLinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift) :: [**_Unit Tests_**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Stack/StackLinkedListTests.swift)
+- [X] [StackLinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Stack/StackLinkedListTests.swift)
   - [Push](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift#L25)
   - [Pop](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift#L29)
   - Helpers:
     - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift#L17)
     - [peek](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift#L19)
+
+- [X] [Queue](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Queue/QueueTests.swift)
+  - [EnQueue](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift#L35)
+  - [DeQueue](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift#L46)
+  - Helpers:
+    - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift#L17)
+    - [rearData](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift#L23)
+    - [frontData](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift#L29)
+
+- [X] [QueueLinkedList](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/Queue/QueueLinkedListTests.swift)
+  - [EnQueue](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift#L34)
+  - [DeQueue](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift#L46)
+  - Helpers:
+    - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift#L16)
+    - [rearData](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift#L22)
+    - [frontData](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift#L28)
