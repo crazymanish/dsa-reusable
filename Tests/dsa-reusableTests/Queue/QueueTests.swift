@@ -10,7 +10,7 @@ import XCTest
 
 final class QueueTests: XCTestCase {
     func testIsEmpty() {
-        let queue = Queue<Int>()
+        var queue = Queue<Int>()
 
         XCTAssertTrue(queue.isEmpty)
         XCTAssertEqual(queue.array, [])
@@ -39,7 +39,7 @@ final class QueueTests: XCTestCase {
     }
 
     func testEnQueue() {
-        let queue = Queue<Int>()
+        var queue = Queue<Int>()
 
         queue.enQueue(data: 10)
         queue.enQueue(data: 20)
@@ -55,7 +55,7 @@ final class QueueTests: XCTestCase {
     }
 
     func testDeQueue() {
-        let queue = Queue<Int>()
+        var queue = Queue<Int>()
 
         var deletedData = queue.deQueue()
         XCTAssertNil(deletedData)

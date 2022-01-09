@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Queue<T> {
+struct Queue<T> {
     var array: [T] = []
     var rearIndex: Int = -1 // EnQueue (entry) end
     var frontIndex: Int = -1 // DeQueue (exit) end
@@ -32,7 +32,7 @@ extension Queue {
         return array[frontIndex]
     }
 
-    public func enQueue(data: T) {
+    public mutating func enQueue(data: T) {
         array.append(data)
 
         if isEmpty {
@@ -43,7 +43,7 @@ extension Queue {
         }
     }
 
-    public func deQueue() -> T? {
+    public mutating func deQueue() -> T? {
         if isEmpty { return nil }
 
         let deletedData = array[frontIndex]
@@ -57,5 +57,21 @@ extension Queue {
         }
 
         return deletedData
+    }
+
+    public func printQueue() {
+        if isEmpty {
+            print("Empty Queue!")
+            return
+        }
+
+        var tempQueue = self
+        var deletedArray: [T] = []
+
+        while tempQueue.isEmpty == false {
+            deletedArray.append(tempQueue.deQueue()!)
+        }
+
+        print(deletedArray)
     }
 }
