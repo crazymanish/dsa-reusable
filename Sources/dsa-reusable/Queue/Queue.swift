@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Queue<T> {
+public struct Queue<T> {
     var array: [T] = []
     var rearIndex: Int = -1 // EnQueue (entry) end
     var frontIndex: Int = -1 // DeQueue (exit) end
