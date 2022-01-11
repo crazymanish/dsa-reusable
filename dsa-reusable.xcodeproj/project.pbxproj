@@ -31,6 +31,7 @@
 		138A8684278C19C800CDA6C2 /* BinaryTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A8683278C19C800CDA6C2 /* BinaryTreeNode.swift */; };
 		138A8688278C246800CDA6C2 /* BinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A8686278C245900CDA6C2 /* BinaryTreeTests.swift */; };
 		138A868A278C2D1000CDA6C2 /* BinaryTree+Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A8689278C2D1000CDA6C2 /* BinaryTree+Traversal.swift */; };
+		138A8775278DECA600CDA6C2 /* BinaryTree+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A8774278DECA600CDA6C2 /* BinaryTree+Helper.swift */; };
 		13F708B52782383900CB3140 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708B42782383900CB3140 /* Stack.swift */; };
 		13F708B927823A6200CB3140 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708B827823A6200CB3140 /* StackTests.swift */; };
 		13F708BB27823DCF00CB3140 /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F708BA27823DCF00CB3140 /* StackLinkedList.swift */; };
@@ -71,6 +72,7 @@
 		138A8683278C19C800CDA6C2 /* BinaryTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeNode.swift; sourceTree = "<group>"; };
 		138A8686278C245900CDA6C2 /* BinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTests.swift; sourceTree = "<group>"; };
 		138A8689278C2D1000CDA6C2 /* BinaryTree+Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryTree+Traversal.swift"; sourceTree = "<group>"; };
+		138A8774278DECA600CDA6C2 /* BinaryTree+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryTree+Helper.swift"; sourceTree = "<group>"; };
 		13F708B42782383900CB3140 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		13F708B827823A6200CB3140 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		13F708BA27823DCF00CB3140 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				138A8681278C19B300CDA6C2 /* BinaryTree.swift */,
+				138A8774278DECA600CDA6C2 /* BinaryTree+Helper.swift */,
 				138A8689278C2D1000CDA6C2 /* BinaryTree+Traversal.swift */,
 				138A8683278C19C800CDA6C2 /* BinaryTreeNode.swift */,
 			);
@@ -366,6 +369,7 @@
 			files = (
 				138A8684278C19C800CDA6C2 /* BinaryTreeNode.swift in Sources */,
 				13F7091227839E6700CB3140 /* QueueLinkedList.swift in Sources */,
+				138A8775278DECA600CDA6C2 /* BinaryTree+Helper.swift in Sources */,
 				131D171B277312CE007FFE32 /* SinglyLinkedList.swift in Sources */,
 				13F7090D27837DCD00CB3140 /* Queue.swift in Sources */,
 				13F708BB27823DCF00CB3140 /* StackLinkedList.swift in Sources */,
