@@ -27,4 +27,26 @@ extension BinaryTree {
         print(node!.data)
         if node?.right != nil { inorderTraversal(node: node?.right) }
     }
+
+    public func levelOrderTraversal() {
+        if height == 0 {
+            print("Tree is empty!")
+            return
+        }
+
+        for currentLevel in 1...height {
+            printLevelOrderTraversal(node: root, level: currentLevel)
+        }
+    }
+
+    private func printLevelOrderTraversal(node: Node<T>?, level: Int) {
+        if node == nil { return }
+
+        if level == 1 {
+            print(node!.data)
+        }
+
+        printLevelOrderTraversal(node: node?.left, level: level - 1)
+        printLevelOrderTraversal(node: node?.right, level: level - 1)
+    }
 }

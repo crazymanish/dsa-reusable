@@ -85,6 +85,7 @@ print("Input: \(singlyLinkedList.asArray)")
 - [X] [BinaryTree](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift) :: [**Unit Tests**](https://github.com/crazymanish/dsa-reusable/blob/main/Tests/dsa-reusableTests/BinaryTree/BinaryTreeTests.swift)
   - [Insert](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L19)
   - [InorderTraversal](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L11)
+  - [LevelOrderTraversal](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L31)
   - Helpers:
     - [isEmpty](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L13)
     - [height](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BHelper.swift#L11)

@@ -9,6 +9,13 @@ import XCTest
 @testable import dsa_reusable
 
 final class BinaryTreeTests: XCTestCase {
+/*
+        1
+        /\
+       2  3
+      /\   /\
+     4  5  6 7
+ */
     func testIsEmpty() {
         var tree = BinaryTree<Int>()
 
@@ -46,5 +53,8 @@ final class BinaryTreeTests: XCTestCase {
 
         XCTAssertFalse(tree.isEmpty)
         XCTAssertEqual(tree.height, 3)
+
+        print("Binary tree level-order traversal: ")
+        tree.levelOrderTraversal()
     }
 }
