@@ -21,40 +21,42 @@ final class BinaryTreeTests: XCTestCase {
 
         XCTAssertTrue(tree.isEmpty)
         XCTAssertEqual(tree.height, 0)
+        XCTAssertEqual(tree.inorderTraversal(), [])
+        XCTAssertEqual(tree.levelOrderTraversal(), [])
 
         tree.insert(data: 1)
         //1 will become root node of the tree
-        print("Binary tree after insertion: ")
-        tree.inorderTraversal()
+        XCTAssertEqual(tree.inorderTraversal(), [1])
+        XCTAssertEqual(tree.levelOrderTraversal(), [1])
 
+        XCTAssertFalse(tree.isEmpty)
         XCTAssertEqual(tree.height, 1)
 
         tree.insert(data: 2)
         tree.insert(data: 3)
         //2 will become left child and 3 will become right child of root node 1
-        print("Binary tree after insertion: ")
-        tree.inorderTraversal()
+        XCTAssertEqual(tree.inorderTraversal(), [2, 1, 3])
+        XCTAssertEqual(tree.levelOrderTraversal(), [1, 2, 3])
 
+        XCTAssertFalse(tree.isEmpty)
         XCTAssertEqual(tree.height, 2)
 
         tree.insert(data: 4)
         tree.insert(data: 5)
         //4 will become left child and 5 will become right child of node 2
-        print("Binary tree after insertion: ")
-        tree.inorderTraversal()
+        XCTAssertEqual(tree.inorderTraversal(), [4, 2, 5, 1, 3])
+        XCTAssertEqual(tree.levelOrderTraversal(), [1, 2, 3, 4, 5])
 
+        XCTAssertFalse(tree.isEmpty)
         XCTAssertEqual(tree.height, 3)
 
         tree.insert(data: 6)
         tree.insert(data: 7)
         //6 will become left child and 7 will become right child of node 3
-        print("Binary tree after insertion: ")
-        tree.inorderTraversal()
+        XCTAssertEqual(tree.inorderTraversal(), [4, 2, 5, 1, 6, 3, 7])
+        XCTAssertEqual(tree.levelOrderTraversal(), [1, 2, 3, 4, 5, 6, 7])
 
         XCTAssertFalse(tree.isEmpty)
         XCTAssertEqual(tree.height, 3)
-
-        print("Binary tree level-order traversal: ")
-        tree.levelOrderTraversal()
     }
 }

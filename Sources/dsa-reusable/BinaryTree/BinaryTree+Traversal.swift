@@ -8,45 +8,50 @@
 import Foundation
 
 extension BinaryTree {
-    public func inorderTraversal() {
+    public func inorderTraversal() -> [T] {
         if isEmpty {
-            print("Tree is empty!")
-            return
+            return []
         }
 
-        inorderTraversal(node: root)
+        var array: [T] = []
+
+        inorderTraversal(node: root, array: &array)
+
+        return array
     }
 
-    private func inorderTraversal(node: Node<T>?) {
+    private func inorderTraversal(node: Node<T>?, array: inout [T]) {
         if node == nil {
-            print("Nil")
             return
         }
 
-        if node?.left != nil { inorderTraversal(node: node?.left) }
-        print(node!.data)
-        if node?.right != nil { inorderTraversal(node: node?.right) }
+        if node?.left != nil { inorderTraversal(node: node?.left, array: &array) }
+        array.append(node!.data)
+        if node?.right != nil { inorderTraversal(node: node?.right, array: &array) }
     }
 
-    public func levelOrderTraversal() {
+    public func levelOrderTraversal() -> [T] {
         if height == 0 {
-            print("Tree is empty!")
-            return
+            return []
         }
+
+        var array: [T] = []
 
         for currentLevel in 1...height {
-            printLevelOrderTraversal(node: root, level: currentLevel)
+            levelOrderTraversal(node: root, level: currentLevel, array: &array)
         }
+
+        return array
     }
 
-    private func printLevelOrderTraversal(node: Node<T>?, level: Int) {
+    private func levelOrderTraversal(node: Node<T>?, level: Int, array: inout [T]) {
         if node == nil { return }
 
         if level == 1 {
-            print(node!.data)
+            array.append(node!.data)
         }
 
-        printLevelOrderTraversal(node: node?.left, level: level - 1)
-        printLevelOrderTraversal(node: node?.right, level: level - 1)
+        levelOrderTraversal(node: node?.left, level: level - 1, array: &array)
+        levelOrderTraversal(node: node?.right, level: level - 1, array: &array)
     }
 }
