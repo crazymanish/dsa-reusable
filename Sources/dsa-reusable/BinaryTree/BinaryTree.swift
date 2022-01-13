@@ -8,7 +8,7 @@
 import Foundation
 
 public struct BinaryTree<T: Equatable> {
-    var root: Node<T>? = nil
+    public var root: Node<T>? = nil
 
     public var isEmpty: Bool { root == nil }
 
