@@ -99,3 +99,25 @@ extension BinaryTree {
         array.append(node!.data)
     }
 }
+
+extension BinaryTree {
+    public var preorderIterativeTraversal: [T] {
+        if isEmpty { return [] }
+
+        let stack = Stack<Node<T>>()
+        // Push root into stack
+        stack.push(data: root!)
+
+        var array: [T] = []
+
+        while stack.isEmpty == false {
+            let deletedNode = stack.pop()!
+            array.append(deletedNode.data)
+
+            if let rightNode = deletedNode.right { stack.push(data: rightNode) }
+            if let leftNode = deletedNode.left { stack.push(data: leftNode) }
+        }
+
+        return array
+    }
+}
