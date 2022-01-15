@@ -40,6 +40,8 @@ public class DoublyLinkedList<T: Equatable> {
         return length
     }
 
+    public init() {}
+
     public func insertAtStart(data: T) {
         let newNode = DoublyLinkedListNode(data: data)
 
