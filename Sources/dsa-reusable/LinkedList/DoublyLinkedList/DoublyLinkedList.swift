@@ -53,4 +53,37 @@ public class DoublyLinkedList<T: Equatable> {
             head = newNode
         }
     }
+
+    public func deleteFromStart() -> T? {
+        guard isEmpty == false else { return nil }
+
+        let deletedNode = head
+
+        head = head?.nextNode
+        head?.previousNode = nil
+
+        return deletedNode?.data
+    }
+
+    public func delete(data: T) {
+        guard isEmpty == false else { return }
+
+        if head?.data == data {
+            head = nil
+            return
+        }
+
+        var currentNode = head
+
+        while currentNode != nil {
+            if currentNode!.data == data {
+                currentNode?.previousNode?.nextNode = currentNode?.nextNode
+                currentNode?.nextNode?.previousNode = currentNode?.previousNode
+                currentNode = nil
+                return
+            }
+
+            currentNode = currentNode?.nextNode
+        }
+    }
 }

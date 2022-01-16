@@ -31,4 +31,35 @@ final class DoublyLinkedListTests: XCTestCase {
 
         XCTAssertEqual(linkedList.count, 2)
     }
+
+    func testDeleteFromStart() {
+        let linkedList = DoublyLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 10)
+        linkedList.insertAtStart(data: 20)
+        linkedList.insertAtStart(data: 30)
+        linkedList.insertAtStart(data: 40)
+
+        XCTAssertEqual(linkedList.asArray, [40, 30, 20, 10])
+
+        let deletedData = linkedList.deleteFromStart()
+
+        XCTAssertEqual(deletedData, 40)
+        XCTAssertEqual(linkedList.asArray, [30, 20, 10])
+    }
+
+    func testDeleteWithData() {
+        let linkedList = DoublyLinkedList<Int>()
+
+        linkedList.insertAtStart(data: 10)
+        linkedList.insertAtStart(data: 20)
+        linkedList.insertAtStart(data: 30)
+        linkedList.insertAtStart(data: 40)
+
+        XCTAssertEqual(linkedList.asArray, [40, 30, 20, 10])
+
+        linkedList.delete(data: 20)
+
+        XCTAssertEqual(linkedList.asArray, [40, 30, 10])
+    }
 }
